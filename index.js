@@ -49,8 +49,6 @@ exports.parse = function(feedUrl, callback) {
 
     function readNow(items) {
         const propertiesINeed = ['title', 'author', 'date', 'description', 'image'];
-        console.log(items);
-
         items = items.map((oneItem) => {
 
             for (let keys in oneItem) {
